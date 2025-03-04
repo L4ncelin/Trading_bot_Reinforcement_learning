@@ -1,4 +1,4 @@
-name : env_ovo_project
+name : env_rl_project
 
 channels:
   - conda-forge
@@ -18,15 +18,13 @@ dependencies:
   - pillow
   - pip
   - pip:
-    - jupyter
-    - seaborn
-    - black
-    - mne
-    - tqdm
-    - jolib
-    - xgboost
-    - colorcet
-    - tensorflow
-    - statsmodels
-    - shap
-    - bokeh
+      - jupyter
+      - seaborn
+      - black
+      - mne
+      - tqdm
+      - joblib
+      - xgboost
+      - colorcet
+      - statsmodels
+      - bokeh
