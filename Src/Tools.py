@@ -28,6 +28,10 @@ def compute_ema(series, period=12):
     """Calcule une EMA (Exponential Moving Average)."""
     return series.ewm(span=period, adjust=False).mean()
 
+def compute_volatility(series, window=10):
+    """ Calcule la volatilité (écart-type des prix de clôture sur une fenêtre). """
+    return series.pct_change().rolling(window=window).std()
+
 # ----------------------------------- Plots ---------------------------------- #
 def plot_candlestick(data):
     """
